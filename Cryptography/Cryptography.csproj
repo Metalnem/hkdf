@@ -6,6 +6,7 @@
     <Title>HKDF</Title>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Nemanja Mijailovic</Authors>
+    <PackageProjectUrl>https://github.com/Metalnem/hkdf</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Metalnem/hkdf</RepositoryUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/Metalnem/hkdf/master/LICENSE</PackageLicenseUrl>
     <Description>.NET Standard 2.0 implementation of HMAC-based Extract-and-Expand Key Derivation Function, defined in RFC 5869</Description>
