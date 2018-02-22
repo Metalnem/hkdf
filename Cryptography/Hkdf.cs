@@ -84,6 +84,11 @@ namespace Cryptography
 		/// <param name="data">Output destination.</param>
 		public void GetBytes(byte[] data)
 		{
+			if (disposed)
+			{
+				throw new ObjectDisposedException(nameof(Hkdf));
+			}
+
 			if (data == null)
 			{
 				throw new ArgumentNullException(nameof(data));
