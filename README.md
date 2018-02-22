@@ -1,4 +1,4 @@
-# libhkdf [![Build Status](https://travis-ci.org/Metalnem/libhkdf.svg?branch=master)](https://travis-ci.org/Metalnem/libhkdf) [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/metalnem/libhkdf/master/LICENSE)
+# libhkdf [![Latest Version](https://img.shields.io/nuget/v/libhkdf.svg)](https://www.nuget.org/packages/libhkdf) [![Build Status](https://travis-ci.org/Metalnem/libhkdf.svg?branch=master)](https://travis-ci.org/Metalnem/libhkdf) [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/metalnem/libhkdf/master/LICENSE)
 
 .NET Standard 2.0 implementation of HMAC-based
 Extract-and-Expand Key Derivation Function, defined in
