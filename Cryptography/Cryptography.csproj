@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>libhkdf</PackageId>
-    <Title>HKDF</Title>
+    <Title>libhkdf</Title>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Nemanja Mijailovic</Authors>
     <PackageProjectUrl>https://github.com/Metalnem/hkdf</PackageProjectUrl>
