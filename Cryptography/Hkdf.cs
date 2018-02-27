@@ -10,11 +10,7 @@ namespace Cryptography
 	public sealed class Hkdf : IDisposable
 	{
 		private const byte MaxOutputLength = 255;
-
 		private static readonly byte[] Empty = new byte[0];
-		private static readonly byte[] Zero160 = new byte[20];
-		private static readonly byte[] Zero256 = new byte[32];
-		private static readonly byte[] Zero512 = new byte[64];
 
 		private readonly HMAC hmac;
 		private readonly byte[] info;
@@ -51,7 +47,7 @@ namespace Cryptography
 		/// <returns>An HKDF instance.</returns>
 		internal static Hkdf CreateSha1Hkdf(byte[] ikm, byte[] salt, byte[] info)
 		{
-			return new Hkdf(new HMACSHA1(salt ?? Zero160), ikm, info);
+			return new Hkdf(new HMACSHA1(salt ?? Empty), ikm, info);
 		}
 
 		/// <summary>
@@ -63,7 +59,7 @@ namespace Cryptography
 		/// <returns>An HKDF instance.</returns>
 		public static Hkdf CreateSha256Hkdf(byte[] ikm, byte[] salt, byte[] info)
 		{
-			return new Hkdf(new HMACSHA256(salt ?? Zero256), ikm, info);
+			return new Hkdf(new HMACSHA256(salt ?? Empty), ikm, info);
 		}
 
 		/// <summary>
@@ -75,7 +71,7 @@ namespace Cryptography
 		/// <returns>An HKDF instance.</returns>
 		public static Hkdf CreateSha512Hkdf(byte[] ikm, byte[] salt, byte[] info)
 		{
-			return new Hkdf(new HMACSHA512(salt ?? Zero512), ikm, info);
+			return new Hkdf(new HMACSHA512(salt ?? Empty), ikm, info);
 		}
 
 		/// <summary>
